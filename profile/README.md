@@ -54,7 +54,7 @@ Grafana + Prometheus, ELK
 
 **cAdvisor** |**ELK**
 -----|-----
-<img src = "https://user-images.githubusercontent.com/112836685/215756393-afd0c358-198c-475b-afc4-2a61ef44a20d.png" width="1700px">|<img src = "https://user-images.githubusercontent.com/112836685/215757417-4fba78dc-dd00-4a7d-883b-ab3814ff3d18.png" width="7000px">
+<img src = "https://user-images.githubusercontent.com/112836685/215756393-afd0c358-198c-475b-afc4-2a61ef44a20d.png" width="1700px">|<img src = "https://user-images.githubusercontent.com/112836685/216101722-55819672-9a8e-4165-b45e-6b42f7b3f101.png" width="7000px">
 
 ***
   
