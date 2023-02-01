@@ -1,6 +1,7 @@
 # Introduction
 <div align=center>
-<image width=80%, height=80%, src="https://user-images.githubusercontent.com/112836685/215968970-62da15c7-3936-487a-ad73-6ce49cc18893.jpeg"> 
+<img src="https://user-images.githubusercontent.com/83197138/215971778-74433832-995b-44d8-b261-8f3d26b0d0b4.png"/>
+
   
 ### [poisonsvb.com](https://poisonsvb.com)
   
