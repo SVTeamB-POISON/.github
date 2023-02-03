@@ -73,9 +73,21 @@ Sentry
 
 ![image](https://user-images.githubusercontent.com/112836685/215753323-26257498-ce14-435b-9bd6-def0dc1f64f7.png)
 
+Swagger를 통해 API 명세서를 작성하였습니다.
+
 </div>
 
+## Celery
 
+![image](https://user-images.githubusercontent.com/112836685/216561527-76405ebd-7106-484e-a951-109bbe986fe7.png)
+
+Celery를 활용해 비교적 오래걸리는 독초 판별 서비스를 비동기로 처리하였습니다. 또한 Polling 방식을 활용해 celery가 요청처리중에도 다른 요청들을 받을 수 있게 구현하였습니다.
+
+## DataBase
+
+![image](https://user-images.githubusercontent.com/112836685/216560324-b395023a-3dcd-4029-93a1-889efc53d3c8.png)
+
+MongoDB Atlas Search를 사용하여 꽃 이름 유사어 검색 및 다중검색이 가능하도록 검색엔진을 구현하였습니다.또한 Scheduler 를 활용하여 1시간 단위로 Database의 값을 update 해주는 Ranking System을 구현하였습니다.
 
 ## Monitoring
 Grafana + Prometheus, ELK
@@ -89,6 +101,12 @@ Grafana + Prometheus, ELK
 |-----|-----|
 <img src = "https://user-images.githubusercontent.com/112836685/215756456-c339b819-463f-4b1b-9434-075df74f3684.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/112836685/216101722-55819672-9a8e-4165-b45e-6b42f7b3f101.png" width="500px" height="300px">
   
+Django에서 Prometheus를 통해 request,response에 대한 정보를 수집을 한 후 Grafana를 통해 시각화 하였습니다.
+Slack과 Grafana를 연동하여 설정한 CPU 사용량 범위를 벗어날 경우 Slack에 경고 알림이 오도록 구현하였습니다.
+CAdvisor를 활용해 각 컨테이너의 cpu, memory사용량등을 알수 있게 하였고, 컨테이너별 네트워크 사용량을 알수있게하였습니다.
+node exporter를 통해 서버의 메모리, cpu 사용량, network traffic 등을 알수있게 하였습니다.
+
+ELK 스택을 활용하여 nginx log를 모니터링하고, 시간대, 사이트별 응답코드, 응답코드 비율등을 모니터링 할 수 있게 설계하였습니다.
 </details>  
 
 
@@ -96,12 +114,35 @@ Grafana + Prometheus, ELK
   
 <details>
 <summary><h3>AI</h3></summary>
+
+
+## Model
+
+![image](https://user-images.githubusercontent.com/112836685/216560396-24ca23a8-fd15-45af-a03c-4e681da66d04.png)
+
+카카오 오픈 api인 crawling과 Kaggle을 통해 데이터셋을 확보하였고 MobileNet V2 모델을 학습 시켰습니다.
+
+![image](https://user-images.githubusercontent.com/112836685/216560570-0b780ca7-d0ee-4f34-92f3-960a4472f53f.png)
+
+해당 이미지는 학습된 모델의 평가 지표입니다. 약 90%의 정확도와 꽤 낮은 손실값을 가지고 있는 것을 확인할 수 있고 모델이 over fitting 되지 않은 것을 확인 할 수 있습니다.
+
 </details> 
  
 
   
 <details>
 <summary><h3>Devops</h3></summary>
+
+## HTTPS
+
+![image](https://user-images.githubusercontent.com/112836685/216560063-cbd003b8-e160-488a-a6ba-ffc83c925f18.png)
+
+SSL인증서를 발급받아 Https를 적용하여 웹사이트의 무결성을 보호하도록 하였습니다.
+
+## Github Actions
+
+Github Actions를 통해 CI/CD 파이프라인을 구축하여 코드 변경사항을 서버에 원할하게 반영할 수 있게 하였습니다.
+
 </details>
   
 ***
