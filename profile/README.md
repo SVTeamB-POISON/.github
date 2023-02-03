@@ -86,7 +86,7 @@ React query를 사용하여 서버와 클라이언트가 비동기적으로 공�
 
 
 ## Storybook
-![image](https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png)
+<img src="https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png" width="60%"/>
 
 Storybook을 사용해서 UI를 구성하는 컴포넌트들의 인터렉션 및 UI를 테스팅할 수 있게 했습니다.
 
