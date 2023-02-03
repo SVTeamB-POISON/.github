@@ -61,14 +61,14 @@ Area| Tech Stack|
 ## Monitoring
 Grafana + Prometheus, ELK
 
-**Django** |**Node exporter**
------|-----
-<img src = "https://user-images.githubusercontent.com/112836685/215755917-d95d1f67-284e-46bc-bb1a-4b4d60d0248d.png" width="7000px">|<img src = "https://user-images.githubusercontent.com/112836685/215756393-afd0c358-198c-475b-afc4-2a61ef44a20d.png" width="1700px">
+|**Django** |**Node exporter**|
+|-----|-----|
+<img src = "https://user-images.githubusercontent.com/112836685/215755917-d95d1f67-284e-46bc-bb1a-4b4d60d0248d.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/112836685/215756393-afd0c358-198c-475b-afc4-2a61ef44a20d.png" width="500px" height="300px">
 
 
-**cAdvisor** |**ELK**
------|-----
-<img src = "https://user-images.githubusercontent.com/112836685/215756456-c339b819-463f-4b1b-9434-075df74f3684.png" width="1700px">|<img src = "https://user-images.githubusercontent.com/112836685/216101722-55819672-9a8e-4165-b45e-6b42f7b3f101.png" width="7000px">
+|**cAdvisor** |**ELK**|
+|-----|-----|
+<img src = "https://user-images.githubusercontent.com/112836685/215756456-c339b819-463f-4b1b-9434-075df74f3684.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/112836685/216101722-55819672-9a8e-4165-b45e-6b42f7b3f101.png" width="500px" height="300px">
 
 ***
   
@@ -102,15 +102,24 @@ $ git clone https://github.com/SV-Team-B/docker.git
 $ git submodule update --recursive --remote --init
 $ docker-compose -f docker-compose-dev.yml up -d
 ```
-  
-*** 
+***
 
-| Name    | <center>이상민</center>|<center>한정욱</center> |<center>강석규</center> | <center>강기환</center> | <center>이준우</center> | <center>박영식</center> | <center>정동훈</center>
-| ------- | --------------------------------------------- | ------------------------------------ | --------------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-| Profile | <center> <img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/83197138?v=4" /> </center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/101189924?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/8746067?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/100124081?s=400&v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/107318116?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/99026631?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/112836685?s=400&v=4" /></center>|
-| role    | <center>Team Leader<br> Frontend, DevOps</center>   | <center>Frontend, <br> DevOps</center>    | <center>Frontend ,<br> DevOps</center>  | <center>Bakcend ,<br> DevOps, <br> AI</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> |
+| Name    | <center>이상민</center>|<center>한정욱</center> |<center>강석규</center> | 
+| ------- | --------------------------------------------- | ------------------------------------ | --------------------------------------------- | 
+| Profile | <center> <img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/83197138?v=4" /> </center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/101189924?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/8746067?v=4" /></center>|
+| role    | <center>Team Leader<br> Frontend, DevOps</center>   | <center>Frontend, <br> DevOps</center>    | <center>Frontend ,<br> DevOps</center>  | 
+GitHub | <center>[@sangminlee98](https://github.com/sangminlee98)</center> | <center>[@nowrobin](https://github.com/nowrobin) </center>| <center>[@AlgeMoya](https://github.com/AlgeMoya) </center>|
+
+
+
+| Name    | <center>강기환</center> | <center>이준우</center> | <center>박영식</center> | <center>정동훈</center>
+| ------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+| Profile |<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/100124081?s=400&v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/107318116?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/99026631?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/112836685?s=400&v=4" /></center>|
+| role    | <center>Bakcend ,<br> DevOps, <br> AI</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> |
 GitHub | <center>[@sangminlee98](https://github.com/sangminlee98)</center> | <center>[@nowrobin](https://github.com/nowrobin) </center>| <center>[@AlgeMoya](https://github.com/AlgeMoya) </center>| <center>[@GiHwan2](https://github.com/GiHwan2)</center> | <center>[@JunRain2](https://github.com/JunRain2)</center> | <center>[@0sik](https://github.com/0sik)</center> | <center>[@jjeongdong](https://github.com/jjeongdong)</center>
 
-***
+
+
+
 
 </div>
