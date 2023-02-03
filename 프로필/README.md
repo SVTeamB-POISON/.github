@@ -14,7 +14,7 @@
 - 이미지 업로드 및 판별![사진업로드](https://user-images.githubusercontent.com/83197138/216485225-5e284db3-d0c8-400d-8b18-c825fc5969c3.gif)
 - 도감 ![도감 무한스크롤](https://user-images.githubusercontent.com/83197138/216485419-960d34f1-04f2-4546-9843-9ca0bc5d6d35.gif)
 - 검색 ![검색](https://user-images.githubusercontent.com/83197138/216485432-be9465a4-8935-4cc5-a2df-f2993e5e02fd.gif)
--  ![차트](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
+- 차트 ![차트](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
 
 
 
@@ -44,8 +44,18 @@ Area| Tech Stack|
 **etc** | ![Slack](https://img.shields.io/static/v1?style=for-the-badge&message=Slack&color=4A154B&logo=Slack&logoColor=FFFFFF&label=) ![Notion](https://img.shields.io/static/v1?style=for-the-badge&message=Notion&color=000000&logo=Notion&logoColor=FFFFFF&label=) ![Figma](https://img.shields.io/static/v1?style=for-the-badge&message=Figma&color=F24E1E&logo=Figma&logoColor=FFFFFF&label=) ![Postman](https://img.shields.io/static/v1?style=for-the-badge&message=Postman&color=FF6C37&logo=Postman&logoColor=FFFFFF&label=) <img src="https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"> ![GitKraken](https://img.shields.io/static/v1?style=for-the-badge&message=GitKraken&color=179287&logo=GitKraken&logoColor=FFFFFF&label=) ![Visual Studio Code](https://img.shields.io/static/v1?style=for-the-badge&message=Visual+Studio+Code&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
 </div>
   
-***
+*** 
+ 
+<details>
+<summary>frontend</summary>
+</details>
+  
+  
 
+
+<details> 
+<summary>backend</summary>
+  
 ## API
 
 
@@ -56,7 +66,7 @@ Area| Tech Stack|
 
 </div>
 
-***
+
 
 ## Monitoring
 Grafana + Prometheus, ELK
@@ -69,9 +79,25 @@ Grafana + Prometheus, ELK
 |**cAdvisor** |**ELK**|
 |-----|-----|
 <img src = "https://user-images.githubusercontent.com/112836685/215756456-c339b819-463f-4b1b-9434-075df74f3684.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/112836685/216101722-55819672-9a8e-4165-b45e-6b42f7b3f101.png" width="500px" height="300px">
+  
+</details>  
 
+
+
+  
+<details>
+<summary>AI</summary>
+</details> 
+ 
+
+  
+<details>
+<summary>Devops</summary>
+</details>
+  
 ***
   
+
 ## Installation
 
 ### 서버 시작하기
