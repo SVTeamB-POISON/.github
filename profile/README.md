@@ -2,19 +2,42 @@
 ### <p>AI를 활용한 독초 판별 서비스 POISON</p>
 <div align=center>
 <img src="https://user-images.githubusercontent.com/112836685/216101873-695f850c-1647-4374-b744-d76cef4f1ab3.png"/>
-
-  
-### 배포 링크 [poisonsvb.com](https://poisonsvb.com)
-  
+ 
 </div>
+
+***
+## Medium.com
+https://medium.com/@nowrobin3/poison-973f84627409
+***
+## Production
+https://poisonsvb.com
   
 ***
 ## Features
-- 반응형 UI ![반응형](https://user-images.githubusercontent.com/83197138/216485464-ba868a0a-3625-429f-8883-d47504e6a74c.gif)
-- 이미지 업로드 및 판별![사진업로드](https://user-images.githubusercontent.com/83197138/216485225-5e284db3-d0c8-400d-8b18-c825fc5969c3.gif)
-- 도감 ![도감 무한스크롤](https://user-images.githubusercontent.com/83197138/216485419-960d34f1-04f2-4546-9843-9ca0bc5d6d35.gif)
-- 검색 ![검색](https://user-images.githubusercontent.com/83197138/216485432-be9465a4-8935-4cc5-a2df-f2993e5e02fd.gif)
-- 랭킹 ![](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
+
+### 반응형 UI
+<img src="https://user-images.githubusercontent.com/83197138/216485464-ba868a0a-3625-429f-8883-d47504e6a74c.gif" width="50%"/>
+Desktop, Tablet, Mobile 등 화면사이즈에 맞는 UI 제공
+
+### 이미지 업로드 및 판별
+<img src="https://user-images.githubusercontent.com/83197138/216485225-5e284db3-d0c8-400d-8b18-c825fc5969c3.gif" width="50%"/>
+Drag&Drop 을 통한 이미지 업로드 및 독초 판별 결과 제공
+
+### 도감 
+<img src="https://user-images.githubusercontent.com/83197138/216485419-960d34f1-04f2-4546-9843-9ca0bc5d6d35.gif" width="50%"/>
+학습된 식물들의 리스트 및 식물 정보를 볼 수 있는 페이지<br/>
+도감리스트 전체를 로딩하는 것이 아닌 무한스크롤을 통해 필요한 만큼의 데이터 로딩
+
+### 검색 
+<img src="https://user-images.githubusercontent.com/83197138/216485432-be9465a4-8935-4cc5-a2df-f2993e5e02fd.gif" width="50%"/>
+도감에 등록된 식물을 검색할 수 있는 페이지<br/>
+MongoDB Atlas Search를 통해 유사어 검색, 다중검색 지원
+
+### 랭킹 
+<img src="https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif" width="50%"/>
+판별 결과로 많이 조회된 순으로 랭킹을 보여주는 컴포넌트<br/>
+스케쥴러를 사용하여 1시간 단위의 랭킹 제공 가능<br/>
+차트를 통해 결과를 시각적으로 표현
 
 
 
@@ -48,6 +71,19 @@ Area| Tech Stack|
  
 <details>
 <summary><h3>Frontend</h3></summary>
+  
+## React Vite TypeScript
+<img src="https://user-images.githubusercontent.com/83197138/216725991-05cc308e-13b0-415e-ba68-df336f37aa3a.png" width="60%"/>
+ESModule 기반의 Vite를 사용하여 개발 서버를 더욱 빠르게 구동했습니다.
+SPA인 React를 사용함으로써 UX를 향상시켰습니다.
+Code splitting을 사용해 라우트별로 파일을 나누어 트래픽과 로딩 속도를 개선하였습니다.
+정적 타입 언어인 Typescript을 사용하여 컴파일 단계에서 에러를 빠르게 확인할 수 있게 하였습니다.
+
+## React Query & MSW
+<img src="https://user-images.githubusercontent.com/83197138/216726050-67a1da9b-e822-4e4d-94e6-6e45148fa3ef.png" width="60%"/>
+React query를 사용하여 서버와 클라이언트가 비동기적으로 공유하는 데이터를 관리하고 데이터 캐싱을 활용하여, API 트래픽을 감소시켰습니다.
+네트워크 단에서 API를 Mocking 할 수 있는 MSW를 사용하여 API 개발을 기다리는 지연시간 없이 프론트엔드 개발이 가능하도록 하여 개발 속도를 향상시켰습니다.
+
 
 ## Storybook
 ![image](https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png)
@@ -183,6 +219,8 @@ $ git submodule update --recursive --remote --init
 $ docker-compose -f docker-compose-dev.yml up -d
 ```
 ***
+  
+## Our Team
 
 | Name    | <center>이상민</center>|<center>한정욱</center> |<center>강석규</center> | 
 | ------- | --------------------------------------------- | ------------------------------------ | --------------------------------------------- | 
