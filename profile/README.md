@@ -1,4 +1,4 @@
-# Introduction
+
 ### <p>AI를 활용한 독초 판별 서비스 POISON</p>
 <div align=center>
 <img src="https://user-images.githubusercontent.com/112836685/216101873-695f850c-1647-4374-b744-d76cef4f1ab3.png"/>
@@ -71,7 +71,208 @@ Area| Tech Stack|
  
 <details>
 <summary><h3>Frontend</h3></summary>
-  
+ 
+## File Directory
+```shell
+ .
+├── Dockerfile.dev
+├── Dockerfile.prod
+├── LICENSE
+├── README.md
+├── index.html
+├── package.json
+├── postcss.config.cjs
+├── public
+│   ├── favicon.ico
+│   └── mockServiceWorker.js
+├── src
+│   ├── App.tsx
+│   ├── Routes.tsx
+│   ├── assets
+│   │   ├── FirstMedal.png
+│   │   ├── SecondMedal.png
+│   │   ├── ThirdMedal.png
+│   │   ├── crown.svg
+│   │   ├── firstPlace.svg
+│   │   ├── icon_x.png
+│   │   ├── image1.svg
+│   │   ├── logo.svg
+│   │   ├── logo2.png
+│   │   ├── main_background.png
+│   │   ├── outercrown.svg
+│   │   ├── react.svg
+│   │   ├── search.svg
+│   │   └── upload.svg
+│   ├── components
+│   │   ├── BarChart
+│   │   │   └── index.tsx
+│   │   ├── DetailModal
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── DonutChart
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── EncyclopediaBtn
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── FlowerCard
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Loading
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Loading2
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── LogoTitle
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── NavigationBar
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── PieChart
+│   │   │   └── index.tsx
+│   │   ├── RankList
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankModal
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankTop
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankingBtn
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   └── ResultCard
+│   │       ├── index.tsx
+│   │       └── styles.module.scss
+│   ├── hooks
+│   │   ├── useInput.ts
+│   │   └── useSearchFlower.ts
+│   ├── main.tsx
+│   ├── media.scss
+│   ├── mocks
+│   │   ├── handlers.ts
+│   │   └── worker.ts
+│   ├── pages
+│   │   ├── Encyclopedia
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Main
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Result
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   └── _layout.tsx
+│   ├── queryClient.ts
+│   ├── reset.scss
+│   ├── stories
+│   │   ├── Button.stories.tsx
+│   │   ├── Button.tsx
+│   │   ├── DetailModal
+│   │   │   ├── DetailModal.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── DonutChart
+│   │   │   ├── DountChart.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── EncyclopediaBtn
+│   │   │   ├── EncyclopediaBtn.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── FlowerCard
+│   │   │   ├── FlowerCard.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Header.stories.tsx
+│   │   ├── Header.tsx
+│   │   ├── Introduction.stories.mdx
+│   │   ├── Loading
+│   │   │   ├── Loading.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Loading2
+│   │   │   ├── Loading2.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── LogoTitle
+│   │   │   ├── Logotitle.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── NavigationBar
+│   │   │   ├── NavigationBar.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── Page.stories.tsx
+│   │   ├── Page.tsx
+│   │   ├── RankList
+│   │   │   ├── RankList.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankModal
+│   │   │   ├── RankModal.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankTop
+│   │   │   ├── RankTop.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── RankingBtn
+│   │   │   ├── RankingBtn.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── ResultCard
+│   │   │   ├── ResultCard.stories.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.scss
+│   │   ├── assets
+│   │   │   ├── FirstMedal.png
+│   │   │   ├── SecondMedal.png
+│   │   │   ├── ThirdMedal.png
+│   │   │   ├── code-brackets.svg
+│   │   │   ├── colors.svg
+│   │   │   ├── comments.svg
+│   │   │   ├── crown.svg
+│   │   │   ├── direction.svg
+│   │   │   ├── firstPlace.svg
+│   │   │   ├── flow.svg
+│   │   │   ├── icon_x.png
+│   │   │   ├── image1.svg
+│   │   │   ├── logo copy.svg
+│   │   │   ├── logo.svg
+│   │   │   ├── logo2.png
+│   │   │   ├── main_background.png
+│   │   │   ├── outercrown.svg
+│   │   │   ├── plugin.svg
+│   │   │   ├── react.svg
+│   │   │   ├── repo.svg
+│   │   │   ├── search.svg
+│   │   │   ├── stackalt.svg
+│   │   │   └── upload.svg
+│   │   ├── button.css
+│   │   ├── header.css
+│   │   ├── hooks
+│   │   │   ├── useInput.ts
+│   │   │   └── useSearchFlower.ts
+│   │   ├── media.scss
+│   │   ├── page.css
+│   │   └── queryClient.ts
+│   ├── types
+│   │   ├── detail.ts
+│   │   ├── ency.ts
+│   │   ├── rank.ts
+│   │   ├── result.ts
+│   │   └── test.ts
+│   └── vite-env.d.ts
+├── tailwind.config.cjs
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+```
+ 
 ## React Vite TypeScript
 <img src="https://user-images.githubusercontent.com/83197138/216725991-05cc308e-13b0-415e-ba68-df336f37aa3a.png" width="60%"/>
 ESModule 기반의 Vite를 사용하여 개발 서버를 더욱 빠르게 구동했습니다.
