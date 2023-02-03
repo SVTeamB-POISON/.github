@@ -52,7 +52,7 @@ Area| Tech Stack|
 ## Storybook
 ![image](https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png)
 
-  Using the Storybook, We can test each the interaction and UI of the components that make up the overall UI without needing to render the whole pages. And Isolation of component to use in specific variation by passing props and datas.
+Storybook을 사용해서 UI를 구성하는 컴포넌트들의 인터렉션 및 UI를 테스팅할 수 있게 했습니다.
 
 ## Monitoring
 Sentry
@@ -60,7 +60,7 @@ Sentry
 |-----|-----|
 <img src = "https://user-images.githubusercontent.com/8746067/216548977-2ed0a9b7-3d73-4442-9160-3d144285cdd9.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/8746067/216548978-ce661720-1700-46b4-a5f1-4b77a65fe83f.png" width="500px" height="300px">
 
-  Our service supports Error Tracking System using Sentry, a front-end error monitoring and tracking tool. Sentry provides information on the type and location of the error, so it helpful for reduce time on finding the cause such like error reproducing. As soon as an error occurs, the error log is saved in Sentry and notified by e-mail, so we can quickly check it before user make a report. Since the error is recorded in which environment and in which part of the code, it is possible to quickly find and inform the responsible team member, and it is easy to know whether it is a code problem or a user environment problem.
+프론트엔드 에러 모니터링 및 트래킹 툴인 센트리를 사용하여 에러를 추적하였습니다. 에러의 종류, 발생 위치 등에 대한 정보를 제공하므로 원인을 찾는 데 들이는 시간을 덜 수 있으며, 에러 발생 즉시 메일 알림을 받아 빠르게 확인할 수 있습니다.
   
 </details>  
   
