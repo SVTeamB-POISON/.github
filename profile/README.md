@@ -52,12 +52,16 @@ Area| Tech Stack|
 ## Storybook
 ![image](https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png)
 
+  Using the Storybook, We can test each the interaction and UI of the components that make up the overall UI without needing to render the whole pages. And Isolation of component to use in specific variation by passing props and datas.
+
 ## Monitoring
 Sentry
 |**Performance Monitoring** |**Error Example**|
 |-----|-----|
 <img src = "https://user-images.githubusercontent.com/8746067/216548977-2ed0a9b7-3d73-4442-9160-3d144285cdd9.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/8746067/216548978-ce661720-1700-46b4-a5f1-4b77a65fe83f.png" width="500px" height="300px">
 
+  Our service supports Error Tracking System using Sentry, a front-end error monitoring and tracking tool. Sentry provides information on the type and location of the error, so it helpful for reduce time on finding the cause such like error reproducing. As soon as an error occurs, the error log is saved in Sentry and notified by e-mail, so we can quickly check it before user make a report. Since the error is recorded in which environment and in which part of the code, it is possible to quickly find and inform the responsible team member, and it is easy to know whether it is a code problem or a user environment problem.
+  
 </details>  
   
 
