@@ -14,7 +14,7 @@
 - 이미지 업로드 및 판별![사진업로드](https://user-images.githubusercontent.com/83197138/216485225-5e284db3-d0c8-400d-8b18-c825fc5969c3.gif)
 - 도감 ![도감 무한스크롤](https://user-images.githubusercontent.com/83197138/216485419-960d34f1-04f2-4546-9843-9ca0bc5d6d35.gif)
 - 검색 ![검색](https://user-images.githubusercontent.com/83197138/216485432-be9465a4-8935-4cc5-a2df-f2993e5e02fd.gif)
-- 차트 ![차트](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
+- 랭킹 ![](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
 
 
 
