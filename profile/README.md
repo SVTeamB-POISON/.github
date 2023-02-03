@@ -23,9 +23,12 @@
 
 ***
 ## System Arcitechture
-
+<div align =center>
 <image src="https://user-images.githubusercontent.com/112836685/216496964-67b71afe-feb5-4d87-913d-ae3d83e9bd3c.png">
-
+</div>
+  
+  
+  
 ***
 ## Tech Stack
 
