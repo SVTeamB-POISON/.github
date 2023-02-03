@@ -142,7 +142,7 @@ GitHub | <center>[@sangminlee98](https://github.com/sangminlee98)</center> | <ce
 | ------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 | Profile |<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/100124081?s=400&v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/107318116?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/99026631?v=4" /></center>|<center><img width="110px" height="110px" src="https://avatars.githubusercontent.com/u/112836685?s=400&v=4" /></center>|
 | role    | <center>Bakcend ,<br> DevOps, <br> AI</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> | <center>Backend,<br> DevOps</center> |
-GitHub | <center>[@sangminlee98](https://github.com/sangminlee98)</center> | <center>[@nowrobin](https://github.com/nowrobin) </center>| <center>[@AlgeMoya](https://github.com/AlgeMoya) </center>| <center>[@GiHwan2](https://github.com/GiHwan2)</center> | <center>[@JunRain2](https://github.com/JunRain2)</center> | <center>[@0sik](https://github.com/0sik)</center> | <center>[@jjeongdong](https://github.com/jjeongdong)</center>
+GitHub | <center>[@GiHwan2](https://github.com/GiHwan2)</center> | <center>[@JunRain2](https://github.com/JunRain2) </center>| <center>[@0sik](https://github.com/0sik) </center>| <center>[@jjeongdong](https://github.com/jjeongdong)</center>
 
 
 
