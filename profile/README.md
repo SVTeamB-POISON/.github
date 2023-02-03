@@ -1,12 +1,23 @@
 # Introduction
+### <p>AI를 활용한 독초 판별 서비스 POISON</p>
 <div align=center>
 <img src="https://user-images.githubusercontent.com/112836685/216101873-695f850c-1647-4374-b744-d76cef4f1ab3.png"/>
 
   
-### [poisonsvb.com](https://poisonsvb.com)
+### 배포 링크 [poisonsvb.com](https://poisonsvb.com)
   
 </div>
   
+***
+## Features
+- 반응형 UI ![반응형](https://user-images.githubusercontent.com/83197138/216485464-ba868a0a-3625-429f-8883-d47504e6a74c.gif)
+- 이미지 업로드 및 판별![사진업로드](https://user-images.githubusercontent.com/83197138/216485225-5e284db3-d0c8-400d-8b18-c825fc5969c3.gif)
+- 도감 ![도감 무한스크롤](https://user-images.githubusercontent.com/83197138/216485419-960d34f1-04f2-4546-9843-9ca0bc5d6d35.gif)
+- 검색 ![검색](https://user-images.githubusercontent.com/83197138/216485432-be9465a4-8935-4cc5-a2df-f2993e5e02fd.gif)
+- 차트 ![차트](https://user-images.githubusercontent.com/83197138/216485444-51852996-3fa4-4e6f-a325-00fded4055b2.gif)
+
+
+
 
 
 
