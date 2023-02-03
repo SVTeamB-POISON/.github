@@ -24,7 +24,7 @@
 ***
 ## System Arcitechture
 
-<image src="https://user-images.githubusercontent.com/112836685/215751336-ec4f377d-dc89-400a-9caf-98aecf191273.png">
+<image src="https://user-images.githubusercontent.com/112836685/216496964-67b71afe-feb5-4d87-913d-ae3d83e9bd3c.png">
 
 ***
 ## Tech Stack
