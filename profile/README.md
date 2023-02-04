@@ -73,205 +73,220 @@ Area| Tech Stack|
 <summary><h3>Frontend</h3></summary>
  
 ## File Directory
-```shell
- .
-├── Dockerfile.dev
-├── Dockerfile.prod
-├── LICENSE
-├── README.md
-├── index.html
-├── package.json
-├── postcss.config.cjs
-├── public
-│   ├── favicon.ico
-│   └── mockServiceWorker.js
-├── src
-│   ├── App.tsx
-│   ├── Routes.tsx
-│   ├── assets
-│   │   ├── FirstMedal.png
-│   │   ├── SecondMedal.png
-│   │   ├── ThirdMedal.png
-│   │   ├── crown.svg
-│   │   ├── firstPlace.svg
-│   │   ├── icon_x.png
-│   │   ├── image1.svg
-│   │   ├── logo.svg
-│   │   ├── logo2.png
-│   │   ├── main_background.png
-│   │   ├── outercrown.svg
-│   │   ├── react.svg
-│   │   ├── search.svg
-│   │   └── upload.svg
-│   ├── components
-│   │   ├── BarChart
-│   │   │   └── index.tsx
-│   │   ├── DetailModal
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── DonutChart
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── EncyclopediaBtn
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── FlowerCard
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Loading
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Loading2
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── LogoTitle
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── NavigationBar
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── PieChart
-│   │   │   └── index.tsx
-│   │   ├── RankList
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankModal
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankTop
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankingBtn
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   └── ResultCard
-│   │       ├── index.tsx
-│   │       └── styles.module.scss
-│   ├── hooks
-│   │   ├── useInput.ts
-│   │   └── useSearchFlower.ts
-│   ├── main.tsx
-│   ├── media.scss
-│   ├── mocks
-│   │   ├── handlers.ts
-│   │   └── worker.ts
-│   ├── pages
-│   │   ├── Encyclopedia
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Main
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Result
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   └── _layout.tsx
-│   ├── queryClient.ts
-│   ├── reset.scss
-│   ├── stories
-│   │   ├── Button.stories.tsx
-│   │   ├── Button.tsx
-│   │   ├── DetailModal
-│   │   │   ├── DetailModal.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── DonutChart
-│   │   │   ├── DountChart.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── EncyclopediaBtn
-│   │   │   ├── EncyclopediaBtn.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── FlowerCard
-│   │   │   ├── FlowerCard.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Header.stories.tsx
-│   │   ├── Header.tsx
-│   │   ├── Introduction.stories.mdx
-│   │   ├── Loading
-│   │   │   ├── Loading.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Loading2
-│   │   │   ├── Loading2.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── LogoTitle
-│   │   │   ├── Logotitle.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── NavigationBar
-│   │   │   ├── NavigationBar.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── Page.stories.tsx
-│   │   ├── Page.tsx
-│   │   ├── RankList
-│   │   │   ├── RankList.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankModal
-│   │   │   ├── RankModal.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankTop
-│   │   │   ├── RankTop.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── RankingBtn
-│   │   │   ├── RankingBtn.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── ResultCard
-│   │   │   ├── ResultCard.stories.tsx
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── assets
-│   │   │   ├── FirstMedal.png
-│   │   │   ├── SecondMedal.png
-│   │   │   ├── ThirdMedal.png
-│   │   │   ├── code-brackets.svg
-│   │   │   ├── colors.svg
-│   │   │   ├── comments.svg
-│   │   │   ├── crown.svg
-│   │   │   ├── direction.svg
-│   │   │   ├── firstPlace.svg
-│   │   │   ├── flow.svg
-│   │   │   ├── icon_x.png
-│   │   │   ├── image1.svg
-│   │   │   ├── logo copy.svg
-│   │   │   ├── logo.svg
-│   │   │   ├── logo2.png
-│   │   │   ├── main_background.png
-│   │   │   ├── outercrown.svg
-│   │   │   ├── plugin.svg
-│   │   │   ├── react.svg
-│   │   │   ├── repo.svg
-│   │   │   ├── search.svg
-│   │   │   ├── stackalt.svg
-│   │   │   └── upload.svg
-│   │   ├── button.css
-│   │   ├── header.css
-│   │   ├── hooks
-│   │   │   ├── useInput.ts
-│   │   │   └── useSearchFlower.ts
-│   │   ├── media.scss
-│   │   ├── page.css
-│   │   └── queryClient.ts
-│   ├── types
-│   │   ├── detail.ts
-│   │   ├── ency.ts
-│   │   ├── rank.ts
-│   │   ├── result.ts
-│   │   └── test.ts
-│   └── vite-env.d.ts
-├── tailwind.config.cjs
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.ts
-```
+📦frontend
+ ┣ 📂.github
+ ┃ ┣ 📂ISSUE_TEMPLATE
+ ┃ ┃ ┣ 📜error-report.md
+ ┃ ┃ ┣ 📜feature-request.md
+ ┃ ┃ ┣ 📜refactoring-report.md
+ ┃ ┃ ┗ 📜setting-report.md
+ ┃ ┗ 📜PULL_REQUEST_TEMPLATE.md
+ ┣ 📂.storybook
+ ┃ ┣ 📜main.cjs
+ ┃ ┣ 📜preview-head.html
+ ┃ ┗ 📜preview.cjs
+ ┣ 📂public
+ ┃ ┣ 📜favicon.ico
+ ┃ ┗ 📜mockServiceWorker.js
+ ┣ 📂src
+ ┃ ┣ 📂assets
+ ┃ ┃ ┣ 📜FirstMedal.png
+ ┃ ┃ ┣ 📜SecondMedal.png
+ ┃ ┃ ┣ 📜ThirdMedal.png
+ ┃ ┃ ┣ 📜crown.svg
+ ┃ ┃ ┣ 📜firstPlace.svg
+ ┃ ┃ ┣ 📜icon_x.png
+ ┃ ┃ ┣ 📜image1.svg
+ ┃ ┃ ┣ 📜logo.svg
+ ┃ ┃ ┣ 📜logo2.png
+ ┃ ┃ ┣ 📜main_background.png
+ ┃ ┃ ┣ 📜outercrown.svg
+ ┃ ┃ ┣ 📜react.svg
+ ┃ ┃ ┣ 📜search.svg
+ ┃ ┃ ┗ 📜upload.svg
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📂BarChart
+ ┃ ┃ ┃ ┗ 📜index.tsx
+ ┃ ┃ ┣ 📂DetailModal
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂DonutChart
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂EncyclopediaBtn
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂FlowerCard
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Loading
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Loading2
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂LogoTitle
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂NavigationBar
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂PieChart
+ ┃ ┃ ┃ ┗ 📜index.tsx
+ ┃ ┃ ┣ 📂RankList
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankModal
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankTop
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankingBtn
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┗ 📂ResultCard
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┣ 📂hooks
+ ┃ ┃ ┣ 📜useInput.ts
+ ┃ ┃ ┗ 📜useSearchFlower.ts
+ ┃ ┣ 📂mocks
+ ┃ ┃ ┣ 📜handlers.ts
+ ┃ ┃ ┗ 📜worker.ts
+ ┃ ┣ 📂pages
+ ┃ ┃ ┣ 📂Encyclopedia
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Main
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Result
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┗ 📜_layout.tsx
+ ┃ ┣ 📂stories
+ ┃ ┃ ┣ 📂DetailModal
+ ┃ ┃ ┃ ┣ 📜DetailModal.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂DonutChart
+ ┃ ┃ ┃ ┣ 📜DountChart.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂EncyclopediaBtn
+ ┃ ┃ ┃ ┣ 📜EncyclopediaBtn.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂FlowerCard
+ ┃ ┃ ┃ ┣ 📜FlowerCard.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Loading
+ ┃ ┃ ┃ ┣ 📜Loading.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂Loading2
+ ┃ ┃ ┃ ┣ 📜Loading2.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂LogoTitle
+ ┃ ┃ ┃ ┣ 📜Logotitle.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂NavigationBar
+ ┃ ┃ ┃ ┣ 📜NavigationBar.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankList
+ ┃ ┃ ┃ ┣ 📜RankList.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankModal
+ ┃ ┃ ┃ ┣ 📜RankModal.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankTop
+ ┃ ┃ ┃ ┣ 📜RankTop.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂RankingBtn
+ ┃ ┃ ┃ ┣ 📜RankingBtn.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂ResultCard
+ ┃ ┃ ┃ ┣ 📜ResultCard.stories.tsx
+ ┃ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┃ ┗ 📜styles.module.scss
+ ┃ ┃ ┣ 📂assets
+ ┃ ┃ ┃ ┣ 📜FirstMedal.png
+ ┃ ┃ ┃ ┣ 📜SecondMedal.png
+ ┃ ┃ ┃ ┣ 📜ThirdMedal.png
+ ┃ ┃ ┃ ┣ 📜code-brackets.svg
+ ┃ ┃ ┃ ┣ 📜colors.svg
+ ┃ ┃ ┃ ┣ 📜comments.svg
+ ┃ ┃ ┃ ┣ 📜crown.svg
+ ┃ ┃ ┃ ┣ 📜direction.svg
+ ┃ ┃ ┃ ┣ 📜firstPlace.svg
+ ┃ ┃ ┃ ┣ 📜flow.svg
+ ┃ ┃ ┃ ┣ 📜icon_x.png
+ ┃ ┃ ┃ ┣ 📜image1.svg
+ ┃ ┃ ┃ ┣ 📜logo copy.svg
+ ┃ ┃ ┃ ┣ 📜logo.svg
+ ┃ ┃ ┃ ┣ 📜logo2.png
+ ┃ ┃ ┃ ┣ 📜main_background.png
+ ┃ ┃ ┃ ┣ 📜outercrown.svg
+ ┃ ┃ ┃ ┣ 📜plugin.svg
+ ┃ ┃ ┃ ┣ 📜react.svg
+ ┃ ┃ ┃ ┣ 📜repo.svg
+ ┃ ┃ ┃ ┣ 📜search.svg
+ ┃ ┃ ┃ ┣ 📜stackalt.svg
+ ┃ ┃ ┃ ┗ 📜upload.svg
+ ┃ ┃ ┣ 📂hooks
+ ┃ ┃ ┃ ┣ 📜useInput.ts
+ ┃ ┃ ┃ ┗ 📜useSearchFlower.ts
+ ┃ ┃ ┣ 📜Button.stories.tsx
+ ┃ ┃ ┣ 📜Button.tsx
+ ┃ ┃ ┣ 📜Header.stories.tsx
+ ┃ ┃ ┣ 📜Header.tsx
+ ┃ ┃ ┣ 📜Introduction.stories.mdx
+ ┃ ┃ ┣ 📜Page.stories.tsx
+ ┃ ┃ ┣ 📜Page.tsx
+ ┃ ┃ ┣ 📜button.css
+ ┃ ┃ ┣ 📜header.css
+ ┃ ┃ ┣ 📜media.scss
+ ┃ ┃ ┣ 📜page.css
+ ┃ ┃ ┗ 📜queryClient.ts
+ ┃ ┣ 📂types
+ ┃ ┃ ┣ 📜detail.ts
+ ┃ ┃ ┣ 📜ency.ts
+ ┃ ┃ ┣ 📜rank.ts
+ ┃ ┃ ┣ 📜result.ts
+ ┃ ┃ ┗ 📜test.ts
+ ┃ ┣ 📜App.tsx
+ ┃ ┣ 📜Routes.tsx
+ ┃ ┣ 📜main.tsx
+ ┃ ┣ 📜media.scss
+ ┃ ┣ 📜queryClient.ts
+ ┃ ┣ 📜reset.scss
+ ┃ ┗ 📜vite-env.d.ts
+ ┣ 📜.dockerignore
+ ┣ 📜.eslintrc.js
+ ┣ 📜.git
+ ┣ 📜.gitignore
+ ┣ 📜.prettierrc
+ ┣ 📜Dockerfile.dev
+ ┣ 📜Dockerfile.prod
+ ┣ 📜LICENSE
+ ┣ 📜README.md
+ ┣ 📜index.html
+ ┣ 📜package.json
+ ┣ 📜postcss.config.cjs
+ ┣ 📜tailwind.config.cjs
+ ┣ 📜tsconfig.json
+ ┣ 📜tsconfig.node.json
+ ┣ 📜vite.config.ts
+ ┗ 📜yarn.lock
  
 ## React Vite TypeScript
 <img src="https://user-images.githubusercontent.com/83197138/216725991-05cc308e-13b0-415e-ba68-df336f37aa3a.png" width="60%"/>
@@ -305,6 +320,269 @@ Sentry
 
 <details> 
 <summary><h3>Backend</h3></summary>
+ 
+## File Directory
+📦backend
+ ┣ 📂.github
+ ┃ ┣ 📂ISSUE_TEMPLATE
+ ┃ ┃ ┣ 📜error-report.md
+ ┃ ┃ ┣ 📜feature-request.md
+ ┃ ┃ ┣ 📜refactoring-report.md
+ ┃ ┃ ┗ 📜setting-report.md
+ ┃ ┣ 📜.DS_Store
+ ┃ ┗ 📜PULL_REQUEST_TEMPLATE.md
+ ┣ 📂config
+ ┃ ┣ 📜.env
+ ┃ ┣ 📜__init__.py
+ ┃ ┣ 📜asgi.py
+ ┃ ┣ 📜settings.py
+ ┃ ┣ 📜urls.py
+ ┃ ┗ 📜wsgi.py
+ ┣ 📂flower
+ ┃ ┣ 📂migrations
+ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📜__init__.py
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜celery.py
+ ┃ ┣ 📜connect.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜serializers.py
+ ┃ ┣ 📜tasks.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜updater.py
+ ┃ ┣ 📜urls.py
+ ┃ ┗ 📜views.py
+ ┣ 📂static
+ ┃ ┣ 📂admin
+ ┃ ┃ ┣ 📂css
+ ┃ ┃ ┃ ┣ 📂vendor
+ ┃ ┃ ┃ ┃ ┗ 📂select2
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LICENSE-SELECT2.md
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜select2.css
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜select2.min.css
+ ┃ ┃ ┃ ┣ 📜autocomplete.css
+ ┃ ┃ ┃ ┣ 📜base.css
+ ┃ ┃ ┃ ┣ 📜changelists.css
+ ┃ ┃ ┃ ┣ 📜dashboard.css
+ ┃ ┃ ┃ ┣ 📜fonts.css
+ ┃ ┃ ┃ ┣ 📜forms.css
+ ┃ ┃ ┃ ┣ 📜login.css
+ ┃ ┃ ┃ ┣ 📜nav_sidebar.css
+ ┃ ┃ ┃ ┣ 📜responsive.css
+ ┃ ┃ ┃ ┣ 📜responsive_rtl.css
+ ┃ ┃ ┃ ┣ 📜rtl.css
+ ┃ ┃ ┃ ┗ 📜widgets.css
+ ┃ ┃ ┣ 📂fonts
+ ┃ ┃ ┃ ┣ 📜LICENSE.txt
+ ┃ ┃ ┃ ┣ 📜README.txt
+ ┃ ┃ ┃ ┣ 📜Roboto-Bold-webfont.woff
+ ┃ ┃ ┃ ┣ 📜Roboto-Light-webfont.woff
+ ┃ ┃ ┃ ┗ 📜Roboto-Regular-webfont.woff
+ ┃ ┃ ┣ 📂img
+ ┃ ┃ ┃ ┣ 📂gis
+ ┃ ┃ ┃ ┃ ┣ 📜move_vertex_off.svg
+ ┃ ┃ ┃ ┃ ┗ 📜move_vertex_on.svg
+ ┃ ┃ ┃ ┣ 📜LICENSE
+ ┃ ┃ ┃ ┣ 📜README.txt
+ ┃ ┃ ┃ ┣ 📜calendar-icons.svg
+ ┃ ┃ ┃ ┣ 📜icon-addlink.svg
+ ┃ ┃ ┃ ┣ 📜icon-alert.svg
+ ┃ ┃ ┃ ┣ 📜icon-calendar.svg
+ ┃ ┃ ┃ ┣ 📜icon-changelink.svg
+ ┃ ┃ ┃ ┣ 📜icon-clock.svg
+ ┃ ┃ ┃ ┣ 📜icon-deletelink.svg
+ ┃ ┃ ┃ ┣ 📜icon-no.svg
+ ┃ ┃ ┃ ┣ 📜icon-unknown-alt.svg
+ ┃ ┃ ┃ ┣ 📜icon-unknown.svg
+ ┃ ┃ ┃ ┣ 📜icon-viewlink.svg
+ ┃ ┃ ┃ ┣ 📜icon-yes.svg
+ ┃ ┃ ┃ ┣ 📜inline-delete.svg
+ ┃ ┃ ┃ ┣ 📜search.svg
+ ┃ ┃ ┃ ┣ 📜selector-icons.svg
+ ┃ ┃ ┃ ┣ 📜sorting-icons.svg
+ ┃ ┃ ┃ ┣ 📜tooltag-add.svg
+ ┃ ┃ ┃ ┗ 📜tooltag-arrowright.svg
+ ┃ ┃ ┗ 📂js
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┣ 📜DateTimeShortcuts.js
+ ┃ ┃ ┃ ┃ ┗ 📜RelatedObjectLookups.js
+ ┃ ┃ ┃ ┣ 📂vendor
+ ┃ ┃ ┃ ┃ ┣ 📂jquery
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LICENSE.txt
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜jquery.js
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜jquery.min.js
+ ┃ ┃ ┃ ┃ ┣ 📂select2
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂i18n
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜af.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ar.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜az.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜bg.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜bn.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜bs.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ca.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜cs.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜da.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜de.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜dsb.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜el.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜en.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜es.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜et.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜eu.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜fa.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜fi.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜fr.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜gl.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜he.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜hi.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜hr.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜hsb.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜hu.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜hy.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜id.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜is.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜it.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ja.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ka.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜km.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ko.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜lt.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜lv.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜mk.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ms.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜nb.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ne.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜nl.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜pl.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ps.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜pt-BR.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜pt.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ro.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ru.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sk.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sl.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sq.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sr-Cyrl.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sr.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜sv.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜th.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜tk.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜tr.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜uk.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜vi.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜zh-CN.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜zh-TW.js
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LICENSE.md
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜select2.full.js
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜select2.full.min.js
+ ┃ ┃ ┃ ┃ ┗ 📂xregexp
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜LICENSE.txt
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜xregexp.js
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜xregexp.min.js
+ ┃ ┃ ┃ ┣ 📜SelectBox.js
+ ┃ ┃ ┃ ┣ 📜SelectFilter2.js
+ ┃ ┃ ┃ ┣ 📜actions.js
+ ┃ ┃ ┃ ┣ 📜autocomplete.js
+ ┃ ┃ ┃ ┣ 📜calendar.js
+ ┃ ┃ ┃ ┣ 📜cancel.js
+ ┃ ┃ ┃ ┣ 📜change_form.js
+ ┃ ┃ ┃ ┣ 📜collapse.js
+ ┃ ┃ ┃ ┣ 📜core.js
+ ┃ ┃ ┃ ┣ 📜inlines.js
+ ┃ ┃ ┃ ┣ 📜jquery.init.js
+ ┃ ┃ ┃ ┣ 📜nav_sidebar.js
+ ┃ ┃ ┃ ┣ 📜popup_response.js
+ ┃ ┃ ┃ ┣ 📜prepopulate.js
+ ┃ ┃ ┃ ┣ 📜prepopulate_init.js
+ ┃ ┃ ┃ ┗ 📜urlify.js
+ ┃ ┣ 📂drf-yasg
+ ┃ ┃ ┣ 📂redoc
+ ┃ ┃ ┃ ┣ 📜LICENSE
+ ┃ ┃ ┃ ┣ 📜redoc-logo.png
+ ┃ ┃ ┃ ┣ 📜redoc.min.js
+ ┃ ┃ ┃ ┗ 📜redoc.standalone.js.map
+ ┃ ┃ ┣ 📂redoc-old
+ ┃ ┃ ┃ ┣ 📜LICENSE
+ ┃ ┃ ┃ ┣ 📜redoc.min.js
+ ┃ ┃ ┃ ┗ 📜redoc.min.js.map
+ ┃ ┃ ┣ 📂swagger-ui-dist
+ ┃ ┃ ┃ ┣ 📜LICENSE
+ ┃ ┃ ┃ ┣ 📜NOTICE
+ ┃ ┃ ┃ ┣ 📜absolute-path.js
+ ┃ ┃ ┃ ┣ 📜favicon-32x32.png
+ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┣ 📜oauth2-redirect.html
+ ┃ ┃ ┃ ┣ 📜swagger-ui-bundle.js
+ ┃ ┃ ┃ ┣ 📜swagger-ui-bundle.js.map
+ ┃ ┃ ┃ ┣ 📜swagger-ui-es-bundle-core.js
+ ┃ ┃ ┃ ┣ 📜swagger-ui-es-bundle-core.js.map
+ ┃ ┃ ┃ ┣ 📜swagger-ui-es-bundle.js
+ ┃ ┃ ┃ ┣ 📜swagger-ui-es-bundle.js.map
+ ┃ ┃ ┃ ┣ 📜swagger-ui-standalone-preset.js
+ ┃ ┃ ┃ ┣ 📜swagger-ui-standalone-preset.js.map
+ ┃ ┃ ┃ ┣ 📜swagger-ui.css
+ ┃ ┃ ┃ ┣ 📜swagger-ui.css.map
+ ┃ ┃ ┃ ┗ 📜swagger-ui.js.map
+ ┃ ┃ ┣ 📜README
+ ┃ ┃ ┣ 📜immutable.js
+ ┃ ┃ ┣ 📜immutable.min.js
+ ┃ ┃ ┣ 📜insQ.js
+ ┃ ┃ ┣ 📜insQ.min.js
+ ┃ ┃ ┣ 📜redoc-init.js
+ ┃ ┃ ┣ 📜style.css
+ ┃ ┃ ┗ 📜swagger-ui-init.js
+ ┃ ┗ 📂rest_framework
+ ┃ ┃ ┣ 📂css
+ ┃ ┃ ┃ ┣ 📜bootstrap-theme.min.css
+ ┃ ┃ ┃ ┣ 📜bootstrap-theme.min.css.map
+ ┃ ┃ ┃ ┣ 📜bootstrap-tweaks.css
+ ┃ ┃ ┃ ┣ 📜bootstrap.min.css
+ ┃ ┃ ┃ ┣ 📜bootstrap.min.css.map
+ ┃ ┃ ┃ ┣ 📜default.css
+ ┃ ┃ ┃ ┣ 📜font-awesome-4.0.3.css
+ ┃ ┃ ┃ ┗ 📜prettify.css
+ ┃ ┃ ┣ 📂docs
+ ┃ ┃ ┃ ┣ 📂css
+ ┃ ┃ ┃ ┃ ┣ 📜base.css
+ ┃ ┃ ┃ ┃ ┣ 📜highlight.css
+ ┃ ┃ ┃ ┃ ┗ 📜jquery.json-view.min.css
+ ┃ ┃ ┃ ┣ 📂img
+ ┃ ┃ ┃ ┃ ┣ 📜favicon.ico
+ ┃ ┃ ┃ ┃ ┗ 📜grid.png
+ ┃ ┃ ┃ ┗ 📂js
+ ┃ ┃ ┃ ┃ ┣ 📜api.js
+ ┃ ┃ ┃ ┃ ┣ 📜highlight.pack.js
+ ┃ ┃ ┃ ┃ ┗ 📜jquery.json-view.min.js
+ ┃ ┃ ┣ 📂fonts
+ ┃ ┃ ┃ ┣ 📜fontawesome-webfont.eot
+ ┃ ┃ ┃ ┣ 📜fontawesome-webfont.svg
+ ┃ ┃ ┃ ┣ 📜fontawesome-webfont.ttf
+ ┃ ┃ ┃ ┣ 📜fontawesome-webfont.woff
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings-regular.eot
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings-regular.svg
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings-regular.ttf
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings-regular.woff
+ ┃ ┃ ┃ ┗ 📜glyphicons-halflings-regular.woff2
+ ┃ ┃ ┣ 📂img
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings-white.png
+ ┃ ┃ ┃ ┣ 📜glyphicons-halflings.png
+ ┃ ┃ ┃ ┗ 📜grid.png
+ ┃ ┃ ┗ 📂js
+ ┃ ┃ ┃ ┣ 📜ajax-form.js
+ ┃ ┃ ┃ ┣ 📜bootstrap.min.js
+ ┃ ┃ ┃ ┣ 📜coreapi-0.1.1.js
+ ┃ ┃ ┃ ┣ 📜csrf.js
+ ┃ ┃ ┃ ┣ 📜default.js
+ ┃ ┃ ┃ ┣ 📜jquery-3.5.1.min.js
+ ┃ ┃ ┃ ┗ 📜prettify-min.js
+ ┣ 📜.git
+ ┣ 📜.gitignore
+ ┣ 📜Dockerfile
+ ┣ 📜README.md
+ ┣ 📜manage.py
+ ┗ 📜requirements.txt
   
 ## API
 
@@ -356,6 +634,23 @@ ELK 스택을 활용하여 nginx log를 모니터링하고, 시간대, 사이트
 <details>
 <summary><h3>AI</h3></summary>
 
+## File Directory
+📦AI
+ ┣ 📂.github
+ ┃ ┣ 📂ISSUE_TEMPLATE
+ ┃ ┃ ┣ 📜error-report.md
+ ┃ ┃ ┣ 📜feature-request.md
+ ┃ ┃ ┣ 📜refactoring-report.md
+ ┃ ┃ ┗ 📜setting-report.md
+ ┃ ┗ 📜PULL_REQUEST_TEMPLATE.md
+ ┣ 📜.git
+ ┣ 📜.gitignore
+ ┣ 📜Dockerfile
+ ┣ 📜README.md
+ ┣ 📜app.py
+ ┣ 📜lb6.pickle
+ ┣ 📜p6flower.model
+ ┗ 📜requirements.txt
 
 ## Model
 
@@ -373,6 +668,7 @@ ELK 스택을 활용하여 nginx log를 모니터링하고, 시간대, 사이트
   
 <details>
 <summary><h3>Devops</h3></summary>
+
 
 ## HTTPS
 
