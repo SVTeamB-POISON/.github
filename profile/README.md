@@ -73,6 +73,7 @@ Area| Tech Stack|
 <summary><h3>Frontend</h3></summary>
  
 ## File Directory
+```
 📦frontend
  ┣ 📂.github
  ┃ ┣ 📂ISSUE_TEMPLATE
@@ -287,6 +288,7 @@ Area| Tech Stack|
  ┣ 📜tsconfig.node.json
  ┣ 📜vite.config.ts
  ┗ 📜yarn.lock
+ ```
  
 ## React Vite TypeScript
 <img src="https://user-images.githubusercontent.com/83197138/216725991-05cc308e-13b0-415e-ba68-df336f37aa3a.png" width="60%"/>
@@ -322,6 +324,8 @@ Sentry
 <summary><h3>Backend</h3></summary>
  
 ## File Directory
+
+```
 📦backend
  ┣ 📂.github
  ┃ ┣ 📂ISSUE_TEMPLATE
@@ -583,6 +587,7 @@ Sentry
  ┣ 📜README.md
  ┣ 📜manage.py
  ┗ 📜requirements.txt
+```
   
 ## API
 
@@ -635,6 +640,8 @@ ELK 스택을 활용하여 nginx log를 모니터링하고, 시간대, 사이트
 <summary><h3>AI</h3></summary>
 
 ## File Directory
+ 
+```
 📦AI
  ┣ 📂.github
  ┃ ┣ 📂ISSUE_TEMPLATE
@@ -651,6 +658,7 @@ ELK 스택을 활용하여 nginx log를 모니터링하고, 시간대, 사이트
  ┣ 📜lb6.pickle
  ┣ 📜p6flower.model
  ┗ 📜requirements.txt
+```
 
 ## Model
 
