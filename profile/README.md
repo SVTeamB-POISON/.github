@@ -292,19 +292,20 @@ Area| Tech Stack|
  
 ## React Vite TypeScript
 <img src="https://user-images.githubusercontent.com/83197138/216725991-05cc308e-13b0-415e-ba68-df336f37aa3a.png" width="60%"/>
-ESModule 기반의 Vite를 사용하여 개발 서버를 더욱 빠르게 구동했습니다.
-SPA인 React를 사용함으로써 UX를 향상시켰습니다.
-Code splitting을 사용해 라우트별로 파일을 나누어 트래픽과 로딩 속도를 개선하였습니다.
-정적 타입 언어인 Typescript을 사용하여 컴파일 단계에서 에러를 빠르게 확인할 수 있게 하였습니다.
+<br/>
+ESModule 기반의 Vite를 사용하여 개발 서버를 더욱 빠르게 구동했습니다.<br/>
+SPA인 React를 사용함으로써 UX를 향상시켰습니다.<br/>
+Code splitting을 사용해 라우트별로 파일을 나누어 트래픽과 로딩 속도를 개선하였습니다.<br/>
+정적 타입 언어인 Typescript을 사용하여 컴파일 단계에서 에러를 빠르게 확인할 수 있게 하였습니다.<br/>
 
 ## React Query & MSW
-<img src="https://user-images.githubusercontent.com/83197138/216726050-67a1da9b-e822-4e4d-94e6-6e45148fa3ef.png" width="60%"/>
-React query를 사용하여 서버와 클라이언트가 비동기적으로 공유하는 데이터를 관리하고 데이터 캐싱을 활용하여, API 트래픽을 감소시켰습니다.
-네트워크 단에서 API를 Mocking 할 수 있는 MSW를 사용하여 API 개발을 기다리는 지연시간 없이 프론트엔드 개발이 가능하도록 하여 개발 속도를 향상시켰습니다.
+<img src="https://user-images.githubusercontent.com/83197138/216726050-67a1da9b-e822-4e4d-94e6-6e45148fa3ef.png" width="60%"/><br/>
+React query를 사용하여 서버와 클라이언트가 비동기적으로 공유하는 데이터를 관리하고 데이터 캐싱을 활용하여, API 트래픽을 감소시켰습니다.<br/>
+네트워크 단에서 API를 Mocking 할 수 있는 MSW를 사용하여 API 개발을 기다리는 지연시간 없이 프론트엔드 개발이 가능하도록 하여 개발 속도를 향상시켰습니다.<br/>
 
 
 ## Storybook
-<img src="https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png" width="60%"/>
+<img src="https://user-images.githubusercontent.com/8746067/216549205-d8daf99f-19e4-4676-8e64-9243b030bbfd.png" width="60%"/><br/>
 
 Storybook을 사용해서 UI를 구성하는 컴포넌트들의 인터렉션 및 UI를 테스팅할 수 있게 했습니다.
 
@@ -314,7 +315,8 @@ Sentry
 |-----|-----|
 <img src = "https://user-images.githubusercontent.com/8746067/216548977-2ed0a9b7-3d73-4442-9160-3d144285cdd9.png" width="500px" height="300px">|<img src = "https://user-images.githubusercontent.com/8746067/216548978-ce661720-1700-46b4-a5f1-4b77a65fe83f.png" width="500px" height="300px">
 
-프론트엔드 에러 모니터링 및 트래킹 툴인 센트리를 사용하여 에러를 추적하였습니다. 에러의 종류, 발생 위치 등에 대한 정보를 제공하므로 원인을 찾는 데 들이는 시간을 덜 수 있으며, 에러 발생 즉시 메일 알림을 받아 빠르게 확인할 수 있습니다.
+프론트엔드 에러 모니터링 및 트래킹 툴인 센트리를 사용하여 에러를 추적하였습니다.<br/>
+에러의 종류, 발생 위치 등에 대한 정보를 제공하므로 원인을 찾는 데 들이는 시간을 덜 수 있으며, 에러 발생 즉시 메일 알림을 받아 빠르게 확인할 수 있습니다.
   
 </details>  
   
