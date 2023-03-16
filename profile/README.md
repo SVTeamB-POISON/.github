@@ -13,7 +13,7 @@ https://medium.com/@nowrobin3/poison-973f84627409
 https://poisonsvb.com
 (현재 배포 중단)
 
-## 시연 영상 ()
+## 시연 영상 (유튜브)
 [![Video Label](http://img.youtube.com/vi/OSPhfQPK0x8/0.jpg)](https://youtu.be/OSPhfQPK0x8)
 
 
